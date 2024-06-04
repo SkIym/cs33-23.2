@@ -55,7 +55,7 @@ int main() {
     
     matrix->places = places;
     create_graph(matrix->adj_mat, n, places);
-    // print_graph(matrix->adj_mat, n); // debugging purposes
+    print_graph(matrix->adj_mat, n); // debugging purposes
 
     int* visited = (int*)malloc(n * sizeof(int));
     for (int i = 0; i < n; i++) {
